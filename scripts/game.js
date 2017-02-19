@@ -21,9 +21,14 @@ var render = Render.create({
 var ball1 = Bodies.circle(350, 300, 25, 25);
 var ball2 = Bodies.circle(450, 300, 25, 25);
 var ground = Bodies.rectangle(415, 610, 625, 60, { isStatic: true });
+ground.restitution = 0.8;
 var wallr = Bodies.rectangle(810,310,60, 425, { isStatic: true});
+wallr.restitution = 0.8;
 var walll = Bodies.rectangle(0,310,60, 425, { isStatic: true});
+walll.restitution = 0.8;
 var ceil = Bodies.rectangle(415,0,625, 60, { isStatic: true});
+ceil.restitution = 0.8;
+
 
 //move ball1
  // add mouse control
