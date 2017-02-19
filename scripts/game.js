@@ -16,8 +16,8 @@ var render = Render.create({
 });
 
 // create two boxes and a ground
-var ball1 = Bodies.circle(400, 200, 25, 25);
-var ball2 = Bodies.circle(450, 50, 25, 25);
+var ball1 = Bodies.circle(350, 300, 25, 25);
+var ball2 = Bodies.circle(450, 300, 25, 25);
 var ground = Bodies.rectangle(400, 610, 690, 60, { isStatic: true });
 var wallr = Bodies.rectangle(810,300,60, 500, { isStatic: true});
 var walll = Bodies.rectangle(0,400,60, 690, { isStatic: true});
@@ -30,7 +30,7 @@ var mouseconstr = Matter.MouseConstraint.create(engine, Bodies);
 //{
 	//Matter.Body.applyForce(ball1, 500, 20);
 //}
-
+engine.world.gravity.y = 0;
 // add all of the bodies to the world
 World.add(engine.world, [ball1, ball2, ground, wallr, walll, ceil]);
 
