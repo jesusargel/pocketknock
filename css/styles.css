@@ -1,36 +1,36 @@
-body {background-color: #41EAAD;}
+body {
+  background-color: #41EAAD;
+}
 
-        h1{
-          color: white;
-          font-size: 250%;
-          font-family: Rockwell;
-          font-style: bold;
-        }
+h1{
+  color: white;
+  font-size: 250%;
+  font-family: Rockwell;
+  font-style: bold;
+}
 
-        h3{
-          color: gray;
-          font-family: Rockwell;
-          font-size: 150%;
-        }
+h3{
+  color: gray;
+  font-family: Rockwell;
+  font-size: 150%;
+}
 
-        ul{
-          list-style: disc;
-          list-style-position: inside;
-          text-align: left;
-          position: absolute;
-          font-family: "Rockwell Extra Bold","Rockwell Bold",monospace;
-        }
+ul{
+  list-style: disc;
+  list-style-position: inside;
+  text-align: left;
+  position: absolute;
+  font-family: "Rockwell Extra Bold","Rockwell Bold",monospace;
+}
 
-        li{
-          
-          padding: 1em;
-        }
+li{
+  
+  padding: 1em;
+}
 
-        .game{
-          position:relative;
-          margin: 0 auto;
-          border-style: dashed;
-          border-width: 5px;
-          size: absolute;
-        }
+canvas {
+  display: block;
+  margin: 0 auto;
+  vertical-align: middle;
+  border-width: 5px;
 }
