@@ -1,0 +1,33 @@
+body {background-color: #41EAAD;}
+
+        h1{
+          color: white;
+          font-size: 250%;
+          font-family: Rockwell;
+          font-style: bold;
+        }
+
+        h3{
+          color: gray;
+          font-family: Rockwell;
+          font-size: 150%;
+        }
+
+        ul{
+          list-style: disc;
+          list-style-position: inside;
+          text-align: left;
+          position: absolute;
+          font-family: "Rockwell Extra Bold","Rockwell Bold",monospace;
+        }
+
+        li{
+          
+          padding: 1em;
+        }
+
+        .game{
+          position:relative;
+          margin: 0 auto;
+        }
+}
