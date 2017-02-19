@@ -1,3 +1,5 @@
+@import url(font-awesome.min.css);
+
 body {
   background-color: #41EAAD;
 }
@@ -5,13 +7,13 @@ body {
 h1{
   color: white;
   font-size: 250%;
-  font-family: Rockwell;
+  font-family: "Rockwell Extra Bold","Rockwell Bold",monospace;
   font-style: bold;
 }
 
 h3{
   color: gray;
-  font-family: Rockwell;
+  font-family: "Rockwell Extra Bold","Rockwell Bold",monospace;
   font-size: 150%;
 }
 
@@ -21,6 +23,7 @@ ul{
   text-align: left;
   position: absolute;
   font-family: "Rockwell Extra Bold","Rockwell Bold",monospace;
+  font-style: italic;
 }
 
 li{
