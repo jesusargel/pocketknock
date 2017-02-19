@@ -1,6 +1,8 @@
 var Engine = Matter.Engine,
     Render = Matter.Render,
     World = Matter.World,
+    MouseConstraint = Matter.MouseConstraint,
+    Mouse = Matter.Mouse,
     Bodies = Matter.Bodies;
     
 
@@ -24,15 +26,28 @@ var walll = Bodies.rectangle(0,310,60, 425, { isStatic: true});
 var ceil = Bodies.rectangle(415,0,625, 60, { isStatic: true});
 
 //move ball1
-var mouseconstr = Matter.MouseConstraint.create(engine, Bodies);
+ // add mouse control
+    var mouse = Mouse.create(render.canvas),
+        mouseConstraint = MouseConstraint.create(engine, {
+            mouse: mouse,
+            constraint: {
+                stiffness: 0.2,
+                render: {
+                    visible: false
+                }
+            }
+        });
 
-//if(mouseconstr.ball1)
-//{
-	//Matter.Body.applyForce(ball1, 500, 20);
-//}
+    
+
+    // keep the mouse in sync with rendering
+    render.mouse = mouse;
+
+
+
 engine.world.gravity.y = 0;
 // add all of the bodies to the world
-World.add(engine.world, [ball1, ball2, ground, wallr, walll, ceil]);
+World.add(engine.world, [ball1, ball2, ground, wallr, walll, ceil,mouseConstraint]);
 
 
 // run the engine
