@@ -1,5 +1,5 @@
 body {
-  background-color: #AAFDF4;
+  background-image: url('bg.jpg');
 }
 
 h1{
@@ -8,7 +8,7 @@ h1{
   font-family: "Rockwell Extra Bold","Rockwell Bold",monospace;
   font-style: bold;
   stroke: 3px;
-  -webkit-text-stroke: 1px gray;
+  -webkit-text-stroke: 1px black;
   margin: 0 auto;
   vertical-align: middle;
 }
@@ -20,6 +20,7 @@ h3{
   -webkit-text-stroke: 1px black;
   margin: 0 auto;
   vertical-align: middle;
+  margin-top: 20px;
 
 }
 
@@ -35,6 +36,7 @@ ul{
 
 li{
   padding: 1em;
+  color: white;
 }
 
 canvas {
@@ -46,17 +48,20 @@ canvas {
   height: 100%;
   max-width: 600px;
   max-height: 500px;
+  border-style: solid;
+  border-color: white;
 }
 
 .footer {
   list-style: none;
   font-family: "Rockwell Extra Bold","Rockwell Bold",monospace;
-  opacity: 0.5;
+  opacity: 0.85;
   font-size: 115%;
   margin: auto;
   padding: 5px;
-  -webkit-text-stroke: 0.4px white;
+  -webkit-text-stroke: 0.2px black;
   margin: 0 auto;
   max-width: 600px;
+  color: #2D2D2D;
 }
 

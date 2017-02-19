@@ -16,7 +16,12 @@ var engine = Engine.create();
 // create a renderer
 var render = Render.create({
     element: document.body,
-    engine: engine
+    engine: engine,
+    options:
+    {
+        wireframeBackground: '#085408',
+    }
+
 });
 
 function moving()
@@ -84,6 +89,8 @@ document.onkeydown = function(e) {
 
 
 engine.world.gravity.y = 0;
+//render properties for balls
+
 // add all of the bodies to the world
 World.add(engine.world, [ball1, ball2, ball3, ball4, ball5, ball6, ground, wallr, walll, ceil,mouseConstraint]);
 
